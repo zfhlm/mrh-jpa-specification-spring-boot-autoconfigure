@@ -1,4 +1,4 @@
-package org.lushen.mrh.boot.data.jpa.specification.service;
+package org.lushen.mrh.boot.data.jpa.specification.test.service;
 
 import org.lushen.mrh.boot.data.jpa.specification.JpaExampleRepository;
 

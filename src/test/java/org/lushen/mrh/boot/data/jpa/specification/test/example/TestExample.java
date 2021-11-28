@@ -1,9 +1,10 @@
-package org.lushen.mrh.boot.data.jpa.specification.example;
+package org.lushen.mrh.boot.data.jpa.specification.test.example;
 
 import java.util.Arrays;
 
+import org.lushen.mrh.boot.data.jpa.specification.example.JpaExample;
 import org.lushen.mrh.boot.data.jpa.specification.predicate.JpaAndPredicates;
-import org.lushen.mrh.boot.data.jpa.specification.service.HelloEntity;
+import org.lushen.mrh.boot.data.jpa.specification.test.service.HelloEntity;
 
 public class TestExample {
 

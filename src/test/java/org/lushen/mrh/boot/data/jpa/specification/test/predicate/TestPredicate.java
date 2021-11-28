@@ -1,14 +1,15 @@
-package org.lushen.mrh.boot.data.jpa.specification.predicate;
+package org.lushen.mrh.boot.data.jpa.specification.test.predicate;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 import org.lushen.mrh.boot.data.jpa.specification.condition.JpaCondition;
+import org.lushen.mrh.boot.data.jpa.specification.predicate.JpaAndPredicates;
 import org.lushen.mrh.boot.data.jpa.specification.predicate.achieve.JpaAndPredicatesImpl;
-import org.lushen.mrh.boot.data.jpa.specification.service.HelloEntity;
 import org.lushen.mrh.boot.data.jpa.specification.supports.ProxyInvoker;
 import org.lushen.mrh.boot.data.jpa.specification.supports.invoker.DefaultProxyInvoker;
+import org.lushen.mrh.boot.data.jpa.specification.test.service.HelloEntity;
 
 public class TestPredicate {
 

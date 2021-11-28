@@ -1,25 +1,22 @@
-package org.lushen.mrh.boot.data.jpa.specification.service;
+package org.lushen.mrh.boot.data.jpa.specification.test.service;
 
 import java.util.List;
 import java.util.UUID;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.lushen.mrh.boot.data.jpa.specification.JpaExampleRepositoryFactoryBean;
 import org.lushen.mrh.boot.data.jpa.specification.example.JpaExample;
 import org.lushen.mrh.boot.data.jpa.specification.predicate.JpaAndPredicates;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
-import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment=WebEnvironment.NONE)
 @SpringBootApplication
-@EnableJpaRepositories(basePackageClasses=TestHelloService.class, repositoryFactoryBeanClass=JpaExampleRepositoryFactoryBean.class)
 @EnableTransactionManagement
 public class TestHelloService {
 

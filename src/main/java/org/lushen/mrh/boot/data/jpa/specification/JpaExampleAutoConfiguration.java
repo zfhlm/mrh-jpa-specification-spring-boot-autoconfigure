@@ -5,21 +5,16 @@ import java.util.function.Function;
 import org.hibernate.boot.model.naming.Identifier;
 import org.hibernate.boot.model.naming.PhysicalNamingStrategy;
 import org.hibernate.engine.jdbc.env.spi.JdbcEnvironment;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
-import org.springframework.data.repository.config.RepositoryConfigurationExtension;
 
 /**
- * jpa 自动配置
+ * jpa example 自动配置
  * 
  * @author helm
  */
 @Configuration(proxyBeanMethods=false)
-@ConditionalOnClass(PhysicalNamingStrategy.class)
-@ConditionalOnBean(RepositoryConfigurationExtension.class)
 @EnableJpaRepositories(repositoryFactoryBeanClass=JpaExampleRepositoryFactoryBean.class)
 public class JpaExampleAutoConfiguration {
 
